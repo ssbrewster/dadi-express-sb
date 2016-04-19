@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SEEN</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./public/fonts/clear-sans.css">
+  <link rel="stylesheet" href="./public/fonts/clear-sans.css">
+  <link rel="stylesheet" href="./public/fonts/icons.css">
+  <link rel="stylesheet" href="./public/main.css">
+</head>
+<body ng-app="seen">
+  <header class="header grid grid--gutter">
+    <!-- logo -->
+    <h1 class="header__logo push-2 col w-3"><a class="mega" href="/">SEEN</a></h1>
+    <!-- navigation -->
+    <nav class="header__navigation navigation push-2">
+      <!-- Films -->
+      <section class="navigation__films col w-2">
+        <h1><a class="mega" href="/films">Films</a></h1>
+      </section>
+      <!-- Reviews -->
+      <section class="navigation__reviews col w-2">
+        <h1><a class="mega" href="/reviews">Reviews</a></h1>
+      </section>
+      <!-- search -->
+      <section class="navigation__search search col w-4">
+        <input class="search__input input input--text mega" placeholder="Search" value="" />
+        <!--<h1 class="search__title mega">Search</h1>-->
+        <div class="search__suggestions"></div>
+      </section>
+      <section class="navigation__profile col w-1">
+        <h1 class="search__title mega t--right"><a href="/profile">You</a></h1>
+      </section>
+    </nav>
+  </header>
+
+  <main class="main">
+    <popular-films></popular-films>
+    <popular-reviews></popular-reviews>
+  </main>
+
+  <footer>
+    <!--
+    logo
+    navigation
+    -->
+  </footer>
+
+  <!-- vendor scripts -->
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  
+  <!-- app scripts -->
+  <script src="./app/app.module.js"></script>
+  <script src="./app/films/popular-films/popular-films.module.js"></script>
+  <script src="./app/reviews/popular-reviews/popular-reviews.module.js"></script>
+  <script src="./app/films/popular-films/popular-films.directive.js"></script>
+  <script src="./app/reviews/popular-reviews/popular-reviews.directive.js"></script>
+
+</body>
+</html>
