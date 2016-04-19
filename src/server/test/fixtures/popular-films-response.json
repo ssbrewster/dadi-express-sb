@@ -1,0 +1,69 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/vsjBeMPZtyB7yNsYY56XYxifaQZ.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "id": 209112,
+      "original_language": "en",
+      "original_title": "Batman v Superman: Dawn of Justice",
+      "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City\u2019s own formidable, forceful vigilante takes on Metropolis\u2019s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it\u2019s ever known before.",
+      "popularity": 44.673908,
+      "poster_path": "/6bCplVkhowCjTHXWv49UjRPn0eK.jpg",
+      "release_date": "2016-03-23",
+      "title": "Batman v Superman: Dawn of Justice",
+      "video": false,
+      "vote_average": 5.77,
+      "vote_count": 1566
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/njv65RTipNSTozFLuF85jL0bcQe.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878,
+        14
+      ],
+      "id": 140607,
+      "original_language": "en",
+      "original_title": "Star Wars: The Force Awakens",
+      "overview": "Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",
+      "popularity": 32.731728,
+      "poster_path": "/weUSwMdQIa3NaXVzwUoIIcAi85d.jpg",
+      "release_date": "2015-12-15",
+      "title": "Star Wars: The Force Awakens",
+      "video": false,
+      "vote_average": 7.65,
+      "vote_count": 3790
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eIOTsGg9FCVrBc4r2nXaV61JF4F.jpg",
+      "genre_ids": [
+        12,
+        18,
+        14
+      ],
+      "id": 278927,
+      "original_language": "en",
+      "original_title": "The Jungle Book",
+      "overview": "An orphan boy is raised in the Jungle with the help of a pack of wolves, a bear and a black panther.",
+      "popularity": 26.302563,
+      "poster_path": "/vOipe2myi26UDwP978hsYOrnUWC.jpg",
+      "release_date": "2016-04-07",
+      "title": "The Jungle Book",
+      "video": false,
+      "vote_average": 6.42,
+      "vote_count": 209
+    }
+  ],
+  "total_pages": 984,
+  "total_results": 19668
+}

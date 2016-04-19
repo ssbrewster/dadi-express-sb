@@ -1,0 +1,26 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "id": 209112,
+      "original_title": "Batman v Superman: Dawn of Justice",
+      "poster_path": "https://image.tmdb.org/t/p/original/6bCplVkhowCjTHXWv49UjRPn0eK.jpg",
+      "title": "Batman v Superman: Dawn of Justice"
+    },
+    {
+      "id": 140607,
+      "original_title": "Star Wars: The Force Awakens",
+      "poster_path": "https://image.tmdb.org/t/p/original/weUSwMdQIa3NaXVzwUoIIcAi85d.jpg",
+      "title": "Star Wars: The Force Awakens"
+    },
+    {
+      "id": 278927,
+      "original_title": "The Jungle Book",
+      "poster_path": "https://image.tmdb.org/t/p/original/vOipe2myi26UDwP978hsYOrnUWC.jpg",
+      "title": "The Jungle Book"
+    }
+  ],
+  "total_pages": 984,
+  "total_results": 19668
+}
+
