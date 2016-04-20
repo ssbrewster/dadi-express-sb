@@ -9,6 +9,8 @@ var http = require('http');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+app.use('/api', require('./routes'));
+
 console.log('About to crank up node');
 
 app.use(express.static('./src/client/'));
