@@ -1,5 +1,4 @@
 {
-  "page": 1,
   "results": [
     {
       "id": 209112,
@@ -18,9 +17,13 @@
       "original_title": "The Jungle Book",
       "poster_path": "https://image.tmdb.org/t/p/original/vOipe2myi26UDwP978hsYOrnUWC.jpg",
       "title": "The Jungle Book"
+    },
+    {
+      "id": 281957,
+      "original_title": "The Revenant",
+      "poster_path": "https://image.tmdb.org/t/p/original/oXUWEc5i3wYyFnL1Ycu8ppxxPvs.jpg",
+      "title": "The Revenant"
     }
-  ],
-  "total_pages": 984,
-  "total_results": 19668
+  ]
 }
 
