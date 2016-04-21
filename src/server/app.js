@@ -1,10 +1,11 @@
 /*jshint node:true*/
 'use strict';
 
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var http = require('http');
+var express = require('express'),
+    app = express(),
+    bodyParser = require('body-parser'),
+    http = require('http'),
+    morgan = require('morgan');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -13,6 +14,7 @@ app.use('/api', require('./routes'));
 
 console.log('About to crank up node');
 
+app.use(morgan('dev'));
 app.use(express.static('./src/client/'));
 app.use(express.static('./'));
 // Any deep link calls should return index.html
