@@ -4,25 +4,29 @@
       "id": 209112,
       "original_title": "Batman v Superman: Dawn of Justice",
       "poster_path": "https://image.tmdb.org/t/p/original/6bCplVkhowCjTHXWv49UjRPn0eK.jpg",
-      "title": "Batman v Superman: Dawn of Justice"
+      "title": "Batman v Superman: Dawn of Justice",
+      "vote_average": 5.77
     },
     {
       "id": 140607,
       "original_title": "Star Wars: The Force Awakens",
       "poster_path": "https://image.tmdb.org/t/p/original/weUSwMdQIa3NaXVzwUoIIcAi85d.jpg",
-      "title": "Star Wars: The Force Awakens"
+      "title": "Star Wars: The Force Awakens",
+      "vote_average": 7.65
     },
     {
       "id": 278927,
       "original_title": "The Jungle Book",
       "poster_path": "https://image.tmdb.org/t/p/original/vOipe2myi26UDwP978hsYOrnUWC.jpg",
-      "title": "The Jungle Book"
+      "title": "The Jungle Book",
+      "vote_average": 6.42
     },
     {
       "id": 281957,
       "original_title": "The Revenant",
       "poster_path": "https://image.tmdb.org/t/p/original/oXUWEc5i3wYyFnL1Ycu8ppxxPvs.jpg",
-      "title": "The Revenant"
+      "title": "The Revenant",
+      "vote_average": 7.21
     }
   ]
 }
