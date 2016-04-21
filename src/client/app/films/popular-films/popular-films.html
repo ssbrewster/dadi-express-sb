@@ -1,47 +1,14 @@
-<section class="grid grid--gutter push-4">
+<section ng-cloak class="grid grid--gutter push-4">
   <h1 class="kilo col w-12">Popular films <div class="btn-wrap"><a class="btn btn--subtle icon--small" icon-r="caret-down">in the last week</a></div></h1>
   <div class="push-2 col w-12 grid grid--gutter">
-    <div class="col w-3">
+    <div ng-repeat="film in vm.films track by film.id" class="col w-3">
       <article class="film">
         <a href="film.html">
           <div class="film__poster media media--rounded media--pop">
-            <img src="images/interstellar.jpg" alt="Interstellar Poster" />
+            <img ng-src="{{ film.poster_path }}" alt="{{ film.title }} Poster" />
           </div>
-          <h1 class="kilo pad">Interstellar</h1>
-          <h2 class="deca">Christopher Nolan</h2>
-        </a>
-      </article>
-    </div>
-    <div class="col w-3">
-      <article class="film">
-        <a href="film/dallas-buyers-club">
-          <div class="film__poster media media--rounded media--pop">
-            <img src="images/dallas-buyers-club.jpg" alt="Dallas Buyers Club Poster" />
-          </div>
-          <h1 class="kilo pad">Dallas Buyers Club</h1>
-          <h2 class="deca">Jean-Marc Vallée</h2>
-        </a>
-      </article>
-    </div>
-    <div class="col w-3">
-      <article class="film">
-        <a href="film/killerjoe">
-          <div class="film__poster media media--rounded media--pop">
-            <img src="images/killerjoe.jpg" alt="Killer Joe Poster" />
-          </div>
-          <h1 class="kilo pad">Killer Joe</h1>
-          <h2 class="deca">William Friedkin</h2>
-        </a>
-      </article>
-    </div>
-    <div class="col w-3">
-      <article class="film">
-        <a href="film/mud">
-          <div class="film__poster media media--rounded media--pop">
-            <img src="images/mud.jpg" alt="Mud Poster" />
-          </div>
-          <h1 class="kilo pad">Mud</h1>
-          <h2 class="deca">Jeff Nichols</h2>
+          <h1 class="kilo pad">{{ film.title }}</h1>
+          <h2 class="deca">Rating: {{ film.vote_average }}</h2>
         </a>
       </article>
     </div>

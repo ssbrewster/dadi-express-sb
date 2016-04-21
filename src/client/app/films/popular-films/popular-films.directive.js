@@ -18,7 +18,21 @@
   }
 
   /* @ngInject */
-  function PopularFilmsController() {
+  function PopularFilmsController($http) {
     var vm = this;
+
+    vm.films = {};
+    vm.numResults = 4;
+    
+    activate();
+
+    function activate() {
+      $http.get('/api/get-popular-films', {params: {"numResults": vm.numResults}})
+      .then(function(res) {
+        vm.films = res.data.results;
+      }, function(err) {
+        console.log(err);
+      });
+    }
   }
 })();
