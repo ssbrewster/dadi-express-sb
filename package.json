@@ -13,7 +13,7 @@
     "express": "4.9.3",
     "lodash.foreach": "^4.2.0",
     "lodash.pick": "^4.2.0",
-    "request": "^2.72.0"
+    "request-promise": "^3.0.0"
   },
   "devDependencies": {
     "istanbul": "^0.4.3",
