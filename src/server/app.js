@@ -4,7 +4,7 @@
 var express = require('express'),
     app = express(),
     bodyParser = require('body-parser'),
-    http = require('http'),
+    logger = require('./utils/logger.js'),
     morgan = require('morgan');
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -14,7 +14,7 @@ app.use('/api', require('./routes'));
 
 console.log('About to crank up node');
 
-app.use(morgan('dev'));
+app.use(morgan('common', {'stream': logger.stream}));
 app.use(express.static('./src/client/'));
 app.use(express.static('./'));
 // Any deep link calls should return index.html

@@ -1,5 +1,8 @@
 'use strict';
 var requestPromise = require('request-promise'),
+    logger = require('./utils/logger.js'),
+    moment = require('moment'),
+    timestamp = moment().format('DD-MM-YYYY HH:mm:ss'),
     forEach = require('lodash.foreach'),
     pick = require('lodash.pick');
 
@@ -14,9 +17,11 @@ module.exports = {
     }
 
     return requestPromise(requestOptions)
-      .then((res) => {
+      .then((response) => {
+      logger.info(timestamp + ' ' + requestOptions.method + ' ' + requestOptions.uri);
+
         var popularFilms = {results: []};
-        res.results.slice(0, numResults).forEach(value => {
+        response.results.slice(0, numResults).forEach(value => {
           let filmMetadata = pick(value, [
               'id', 
               'original_title', 
@@ -31,8 +36,10 @@ module.exports = {
 
         return popularFilms;
       })
-    .catch((err) => {
-       console.log(err);
+    .catch((error) => {
+        logger.error(timestamp + ' ' + requestOptions.method + ' ' + requestOptions.uri + ' ' + 
+            JSON.stringify(error));
+        throw new Error('API request failed');
     }) 
   }
 }

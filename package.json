@@ -13,8 +13,11 @@
     "express": "4.9.3",
     "lodash.foreach": "^4.2.0",
     "lodash.pick": "^4.2.0",
+    "moment": "^2.13.0",
     "morgan": "^1.7.0",
-    "request-promise": "^3.0.0"
+    "request-promise": "^3.0.0",
+    "winston": "^2.2.0",
+    "winston-daily-rotate-file": "^1.0.1"
   },
   "devDependencies": {
     "istanbul": "^0.4.3",
